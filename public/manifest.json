@@ -1,0 +1,10 @@
+{
+  "name": "Abu Dhabi Chess Club",
+  "short_name": "Abu Dhabi Chess Club",
+  "description": "Abu Dhabi Chess Club",
+  "icons": [],
+  "theme_color": "#003296",
+  "background_color": "#ffffff",
+  "start_url": "https://app.abudhabichess.ae",
+  "display": "standalone"
+}

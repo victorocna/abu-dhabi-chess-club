@@ -1,0 +1,86 @@
+/**
+ * Customize app logo
+ */
+.logo-app {
+  @apply w-12 mr-2;
+}
+
+@screen md {
+  .logo-app {
+    @apply w-12;
+  }
+}
+
+/* LOGIN PAGE */
+#__next {
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.main-header {
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  color: #2d3047;
+}
+.main-header > .slot-left,
+.main-header > .slot-right {
+  width: 124px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-bar {
+  height: 40px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  background: #f09a3e;
+  color: white;
+}
+.top-header-items {
+  display: flex;
+}
+.top-header-items > a {
+  transition: all 0.3s ease-in;
+}
+.top-header-items > a:hover {
+  color: #2d3047;
+  text-decoration: none;
+}
+.top-header-items > a:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.top-header-items > a > li > i {
+  margin-right: 0.5rem;
+}
+@media (max-width: 576px) {
+  .main-header {
+    min-height: 64px;
+  }
+  .slot-left > img {
+    height: 48px;
+  }
+}
+
+/* FOOTER */
+footer {
+  background: #f09a3e;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* LIGHTBOX */
+.ril-prev-button,
+.ril-next-button,
+.ril-prev-button:active,
+.ril-next-button:active {
+  position: absolute !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(255, 0, 0, 0.5);
+}

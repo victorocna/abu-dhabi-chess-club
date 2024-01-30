@@ -1,0 +1,19 @@
+div.jodit-container > div:nth-child(2) > div ul,
+div.jodit-section > ul {
+  list-style: disc;
+  list-style-position: inside;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  padding-left: 1rem;
+}
+
+div.jodit-container > div:nth-child(2) > div ol,
+div.jodit-section > ol {
+  list-style: decimal;
+  list-style-position: inside;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  padding-left: 1rem;
+}

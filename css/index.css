@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'animate.css';
+@import 'aspect-ratio.css';
+@import 'bogdan.css';
+@import 'buttons.css';
+@import 'custom.css';
+@import 'forms.css';
+@import 'datepicker.css';
+@import 'hover.css';
+@import 'jodit.css';
+@import 'layout.css';
+@import 'live.css';
+@import 'loading.css';
+@import 'markdown.css';
+@import 'menu.css';
+@import 'toast.css';
+@import 'victor.css';

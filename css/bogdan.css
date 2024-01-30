@@ -1,0 +1,151 @@
+/* TODO: split css to separate files (i.e. colors.css, fonts.css) */
+/* TODO: might be a good idea to avoid overwriting bootstrap classes (i.e.: .card), so change .card to .account-card */
+
+/* TODO: !MUST! remove styling from default bootstrap classes (.card, .card-header etc.) */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+:root {
+  --black-lightish: #062432;
+  --purple-800: #553c9a;
+  --gray-100: #f7fafc;
+  --yellow-pale: #efdb82;
+  --red-pale: #ea3546;
+}
+
+.card-account {
+  /* font-family: 'Raleway'; */
+  min-width: 300px;
+  width: 100%;
+  max-width: 500px;
+  /* background-color: var(--black-lightish); */
+  /* color: white; */
+}
+
+.card-account .card-header,
+.card-account .card-footer {
+  border: none;
+}
+
+.card-account .card-header h3 {
+  margin-bottom: 0;
+}
+
+.card-account .card-header > img.user-avatar {
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  top: 0.75rem;
+  right: 1.25rem;
+  border: 1px solid var(--gray-100);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.card-account .input-group-prepend span {
+  background-color: var(--purple-800);
+  color: var(--gray-100);
+  border: 0;
+}
+
+/* Center align checkbox, overwrites bootstrap */
+.form-check-input {
+  margin-top: 0.2rem;
+}
+
+.card-account .submit_btn,
+.card-account .submit_btn:hover,
+.card-account .submit_btn:active {
+  color: var(--gray-100);
+  background-color: var(--purple-800);
+  min-width: 75px;
+  border: none;
+}
+
+.card-account .delete_btn,
+.card-account .delete_btn:hover,
+.card-account .delete_btn:active {
+  margin-right: 10px;
+  background-color: var(--red-pale);
+  color: var(var(--black-lightish));
+  min-width: 75px;
+  border: none;
+}
+
+.card-account .card-footer a {
+  margin-left: 4px;
+  color: var(--yellow-pale);
+}
+
+.form-section:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.form-section h5 {
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.focused-bold:focus {
+  font-weight: bold;
+  outline: none !important;
+}
+
+.info-in-circle {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border: 1px dotted green;
+  border-radius: 50%;
+}
+
+.wizard-inner-step {
+  /* padding: 0.5rem 1rem; */
+  overflow-x: hidden;
+}
+
+/* .footer-buttons {
+  padding-left: 1rem;
+} */
+
+.btn-wizard,
+.btn-wizard:hover {
+  background: #3182ce;
+  color: white;
+}
+
+.wizard-inner-step.hide-prev-btn ~ .footer-buttons > .btn-prev {
+  display: none;
+}
+
+.wizard-inner-step.hide-next-btn ~ .footer-buttons > .btn-next {
+  display: none;
+}
+
+.tag-chip {
+  padding: 0.25rem 0.5rem;
+  background-color: #5cb85c;
+  margin-right: 0.5rem;
+  color: white;
+  border-radius: 5px;
+}
+
+.tag-chip > i {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.tag-chip > i:hover {
+  color: red;
+}
+
+.tag-chips-container > span {
+  display: inline-block; /* To prevent wrapping in the middle of the tag */
+}
+
+.board-viewer-container {
+  display: inline-block;
+}

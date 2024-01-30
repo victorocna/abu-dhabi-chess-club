@@ -1,0 +1,119 @@
+input,
+textarea,
+select {
+  width: 100%;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+  @apply cursor-not-allowed bg-gray-200;
+}
+
+input:read-only,
+textarea:read-only,
+select:read-only {
+  @apply cursor-default;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+
+button:active,
+a[role='button']:active {
+  outline: 0 !important;
+  position: relative;
+  top: 1px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  filter: opacity(0.75);
+}
+
+.checkbox:disabled,
+.checkbox:disabled ~ div,
+.form-radio:disabled,
+.form-radio:disabled ~ span {
+  cursor: not-allowed !important;
+}
+
+input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.has-error .input,
+.has-error .select,
+.has-error .textarea {
+  @apply border-red-400 !important;
+}
+
+.has-error .form-label,
+.has-error .form-help {
+  @apply text-red-400 !important;
+}
+
+.input {
+  @apply py-2 px-3 border border-gray-400 shadow-sm rounded-md outline-none !important;
+}
+
+.textarea {
+  @apply py-2 px-3 border border-gray-400 shadow-sm rounded-md outline-none !important;
+}
+
+.select {
+  @apply appearance-none py-2 px-3 border border-gray-400 shadow-sm rounded-md outline-none !important;
+}
+
+.backoffice-input {
+  @apply py-2 px-3 border border-gray-400 shadow-sm rounded-md outline-none !important;
+}
+
+.backoffice-textarea {
+  @apply py-2 px-3 border border-gray-400 shadow-sm rounded-md outline-none !important;
+}
+
+.backoffice-select {
+  @apply appearance-none py-2 px-3 border border-gray-400 shadow-sm rounded-md outline-none !important;
+}
+
+.select {
+  background-image: url('/icons/select.svg');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 8px) center;
+}
+
+.dropdown {
+  @apply border border-gray-400 shadow-sm rounded-md flex justify-between py-2 px-3 w-full bg-white !important;
+}
+
+.dropdown-list {
+  @apply z-10 bg-white shadow-sm w-full outline-none absolute border border-t-0 rounded-b-md border-gray-400 !important;
+}
+
+input[type='password'] {
+  letter-spacing: 0.125em;
+}
+
+.plusminus {
+  @apply inline-flex bg-white text-center shadow-sm border border-gray-400 rounded-md !important;
+}
+
+.required::after {
+  margin-left: 0.2rem;
+  content: '*';
+  color: #ffc367;
+}

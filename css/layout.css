@@ -1,0 +1,55 @@
+#__next {
+  min-height: 100vh;
+  @apply bg-gray-200;
+}
+#__next header {
+  grid-area: header;
+  z-index: 15;
+}
+#__next .nav-menu {
+  z-index: 14;
+}
+@media (max-width: 768px) {
+  #__next {
+    grid-template-rows: minmax(auto, 80px) 1fr;
+    grid-template-columns: 1fr;
+  }
+  #__next .nav-menu {
+    z-index: 20;
+  }
+}
+
+/**
+ * @see https://css-tricks.com/perfect-full-page-background-image/
+ * @see https://css-tricks.com/almanac/properties/b/background-blend-mode/
+ */
+.cover,
+.cover-error {
+  /* background: no-repeat center center / contain fixed; */
+  background-size: cover;
+  background-image: url('/images/chess-board.jpg');
+}
+.cover-error {
+  background: no-repeat center center / cover fixed;
+  background-image: url('/images/spongebob.jpg');
+  background-color: #aaa;
+  background-blend-mode: multiply;
+}
+
+.max {
+  max-width: 75rem;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-aspect-ratio: 2/1) {
+  .max {
+    max-width: 64rem;
+  }
+}
+
+.flex-item {
+  @apply mr-2 my-1;
+}
+.flex-item-lg {
+  @apply mr-2 my-2;
+}

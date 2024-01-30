@@ -1,0 +1,29 @@
+.data-table {
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.data-table-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.data-table .bgGray {
+  background-color: #eee;
+}
+
+.data-table tr {
+  cursor: pointer;
+}
+
+.data-table .sort-icon {
+  margin-left: 0.5rem;
+}
+
+.data-table .sort-icon.sort-inactive {
+  visibility: hidden;
+}
+
+.data-table th:hover .sort-icon.sort-inactive {
+  visibility: visible;
+}

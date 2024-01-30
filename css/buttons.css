@@ -1,0 +1,63 @@
+.button {
+  @apply relative inline-block cursor-pointer !important;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+
+div > a {
+  margin-right: 6px;
+}
+
+button:active,
+a[role='button']:active {
+  outline: 0 !important;
+  position: relative;
+  top: 1px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  filter: opacity(0.75);
+}
+
+.button.full,
+.button.square {
+  @apply border-2 py-2 px-6 text-sm font-medium !important;
+}
+
+.button.mini {
+  @apply border bg-white py-1 px-3 text-sm !important;
+}
+
+.button.full.primary {
+  @apply border-primary bg-primary rounded-md text-white !important;
+}
+
+.button.full.secondary {
+  @apply border border-secondary bg-secondary text-white !important;
+}
+
+.button.full.accent {
+  @apply border-accent bg-accent text-white !important;
+}
+
+.button.square.primary,
+.button.mini.primary {
+  @apply border-primary text-primary !important;
+}
+
+.button.square.secondary,
+.button.mini.secondary {
+  @apply border-secondary text-secondary !important;
+}
+
+.button.square.accent,
+.button.mini.accent {
+  @apply border-accent text-accent !important;
+}
