@@ -1,8 +1,8 @@
 module.exports = {
   language: 'en',
-  sitename: 'Abu Dhabi Chess Club',
-  title: 'Abu Dhabi Chess Club',
-  description: `Abu Dhabi Chess Club`,
+  sitename: 'Abu Dhabi Chess Club & Mind Games',
+  title: 'Abu Dhabi Chess Club & Mind Games',
+  description: `Abu Dhabi Chess Club & Mind Games`,
   baseurl: 'https://app.abudhabichess.ae',
   logo: '/images/abu-dhabi-chess-club-logo.jpg',
   image: 'https://app.abudhabichess.ae/images/abu-dhabi-chess-club-logo.jpg',
