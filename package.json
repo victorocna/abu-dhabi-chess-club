@@ -13,11 +13,11 @@
   "author": "victorocna <victor@chesscoders.com>",
   "license": "MIT",
   "dependencies": {
-    "@chesscoders/echess": "^2.11.1",
+    "@chesscoders/echess": "^2.11.3",
     "@tailwindcss/custom-forms": "^0.2.1",
     "autoprefixer": "^9.8.6",
     "dotenv": "^8.2.0",
-    "echess": "npm:@chesscoders/echess@^2.11.1",
+    "echess": "npm:@chesscoders/echess@^2.11.3",
     "formik": "2.2.9",
     "lodash": "^4.17.20",
     "next": "^12.3.4",
