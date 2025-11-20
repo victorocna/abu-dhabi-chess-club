@@ -26,9 +26,12 @@ npm run dev
 
 The `@chesscoders/echess` package has the core components of this project.
 
-Integrate the changes in this project is a two step process:
+Copy the code below into the terminal to upgrade the `echess` core components:
 
 ```bash
+# load all variables from .env file
+set -a && source .env && set +a
+
 # update the package
 npm i @chesscoders/echess@latest
 
