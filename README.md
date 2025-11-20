@@ -21,3 +21,17 @@ Start the local server
 ```bash
 npm run dev
 ```
+
+## Core updates
+
+The `@chesscoders/echess` package has the core components of this project.
+
+Integrate the changes in this project is a two step process:
+
+```bash
+# update the package
+npm i @chesscoders/echess@latest
+
+# also update its alias
+npm i echess@npm:@chesscoders/echess@latest
+```
