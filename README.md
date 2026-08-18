@@ -1,6 +1,6 @@
-# Abu Dhabi Chess Club
+# UAE Chess Federation
 
-eChess implementation for Abu Dhabi Chess Club
+eChess implementation for UAE Chess Federation
 
 ## Quick start
 
