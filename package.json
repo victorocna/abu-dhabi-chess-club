@@ -1,7 +1,7 @@
 {
-  "name": "abu-dhabi-chess-club",
+  "name": "uae-chess-federation",
   "version": "1.8.2",
-  "description": "eChess implementation for Abu Dhabi Chess Club",
+  "description": "eChess implementation for UAE Chess Federation",
   "private": true,
   "scripts": {
     "dev": "next -p 8080",
